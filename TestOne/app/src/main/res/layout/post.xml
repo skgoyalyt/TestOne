@@ -1,0 +1,92 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="15dp"
+		android:background="#FFFFFF"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview1"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/back100"
+				android:scaleType="fitCenter"
+				android:tint="#607D8B" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/imageview2"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/three_dots"
+				android:scaleType="fitCenter"
+				android:tint="#607D8B" />
+		</LinearLayout>
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cardview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			app:cardElevation="3dp"
+			app:cardCornerRadius="10dp">
+			<ImageView
+				android:id="@+id/imageview3"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/post_i3"
+				android:scaleType="centerCrop" />
+		</androidx.cardview.widget.CardView>
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:text="Best Practice To Make UI Design Look Attractive"
+			android:textSize="25sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/textview3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:text="Enim sagittis tortor hac molestie. Lectus arcu tellus laoreet metus malesuada amet vivamus nibh commodo. In viverra ut placerat id purus, ornare amet. Vestibulum id sit feugiat nulla mauris sagittis. Vulputate est risus amet orci blandit cursus adipiscing. Euismod adipiscing phasellus a malesuada enim viverra et commodo quis. Risus tellus, egestas aliquam odio. Adipiscing dictum sed elementum a a arcu, quisqu."
+			android:textSize="16sp"
+			android:textColor="#607D8B" />
+		<TextView
+			android:id="@+id/textview4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="10dp"
+			android:paddingBottom="5dp"
+			android:text="Other Article"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
